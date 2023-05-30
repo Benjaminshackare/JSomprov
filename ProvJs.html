@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<!--Fråga 1-->
+    <script>
+    
+        function fraga(){
+           let parameter1 = parseInt(prompt("Skriv ett tal: "));
+
+           let parameter2 = parseInt(prompt("Skriv ett tal: "));
+
+           let summa = parameter1 + parameter2;
+
+           alert(summa);
+       }
+       fraga()
+
+   </script>
+
+ <!--Fråga 2-->
+<p id="demo">Jsprov</p>
+<button onclick="document.getElementById('demo').innerHTML = 'Hej'">Klicka mig</button><br>
+
+<!--Fråga 3-->
+    <br><img id="bild" src="Jsprov.jpeg" alt="hej hej"><br>
+
+    <script>
+
+        function Bytattribut(){
+
+            document.getElementById('bild').src = 'bild.jpg'
+
+        }
+
+        Bytattribut()
+
+    </script>
+
+<!--Fråga 5-->
+<br>
+<form name="Form">
+
+    <label for="Namn">Namn</label>
+
+    <input type="text" name="Namn" id="namn"></input>
+
+    <input type="button" value="submit" onclick="formulär()"></input>
+
+</form>
+
+    
+<script>
+
+    function formulär(){
+
+        var firstname = document.forms["Form"]["namn"].value;
+
+        alert(firstname);
+    }
+    formulär();
+</script>
+
+</body>
+</html>
